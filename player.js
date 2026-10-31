@@ -52,7 +52,7 @@ const evento = (nombre, datos = {}) => {
   }
 };
 
-/** El camino completo a n8n. Se manda al llegar al cierre y al salir. */
+/** El camino completo al webhook. Se manda al llegar al cierre y al salir. */
 const aWebhook = (motivo) => {
   if (!CONFIG.WEBHOOK) return;
   const cuerpo = JSON.stringify({
