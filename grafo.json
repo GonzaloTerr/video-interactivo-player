@@ -1,0 +1,54 @@
+{
+  "inicio": "start",
+  "entradas": {
+    "a": "a",
+    "b": "b"
+  },
+  "nodos": {
+    "start": {
+      "clip": "start.mp4",
+      "pregunta": "Which path do you want?",
+      "opciones": [
+        {
+          "txt": "Path A",
+          "va": "a",
+          "tag": "choice:a"
+        },
+        {
+          "txt": "Path B",
+          "va": "b",
+          "tag": "choice:b"
+        }
+      ]
+    },
+    "a": {
+      "clip": "a.mp4",
+      "pregunta": "You chose path A.",
+      "opciones": "SALIDA"
+    },
+    "b": {
+      "clip": "b.mp4",
+      "pregunta": "You chose path B.",
+      "opciones": "SALIDA"
+    }
+  },
+  "salida": [
+    {
+      "txt": "Chat with the bot",
+      "accion": "wa_bot"
+    },
+    {
+      "txt": "Talk to the team",
+      "accion": "wa_team"
+    },
+    {
+      "txt": "Start again",
+      "accion": "reset"
+    }
+  ],
+  "mensajes": {
+    "_default": "Hi, I watched the video and I want more information.",
+    "choice:a": "Hi, I watched the video and I chose path A.",
+    "choice:b": "Hi, I watched the video and I chose path B."
+  }
+}
